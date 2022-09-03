@@ -45,9 +45,9 @@ lua << EOF
     end
 EOF
 
-hi def IlluminatedWordText gui=underline
-hi def IlluminatedWordRead gui=underline
-hi def IlluminatedWordWrite gui=underline
+hi def IlluminatedWordText cterm=bold gui=bold guibg=#5e5e5f
+hi def IlluminatedWordRead cterm=bold gui=bold guibg=#5e5e5f
+hi def IlluminatedWordWrite cterm=bold gui=bold guibg=#5e5e9f
 
 finish
 end
