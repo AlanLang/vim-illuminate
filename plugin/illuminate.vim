@@ -28,6 +28,8 @@ lua << EOF
     vim.api.nvim_create_user_command('IlluminatePauseBuf', require('illuminate').pause_buf, { bang = true })
     vim.api.nvim_create_user_command('IlluminateResumeBuf', require('illuminate').resume_buf, { bang = true })
     vim.api.nvim_create_user_command('IlluminateToggleBuf', require('illuminate').toggle_buf, { bang = true })
+    vim.api.nvim_create_user_command('IlluminateNextReference', require('illuminate').goto_next_reference, { bang = true })
+    vim.api.nvim_create_user_command('IlluminatePrevReference', require('illuminate').goto_prev_reference, { bang = true })
 
     if not require('illuminate.util').has_keymap('n', '<a-n>') then
         vim.keymap.set('n', '<a-n>', require('illuminate').goto_next_reference)
